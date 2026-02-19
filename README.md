@@ -13,6 +13,11 @@ A browser-based visual investigation and idea-mapping board built with pure HTML
 Evidence Board Pro is a browser-based visual investigation board designed for mapping ideas, linking evidence, and organizing complex information spatially.
 
 It allows users to create notes, upload images, connect related elements, zoom infinitely, and pan across a grid workspace — all inside a clean and minimal interface.
+<p align="center">
+  <a href="https://pro09grammer.github.io/Evidence-Board-Pro/">
+    <img src="https://img.shields.io/badge/Live-Demo-Click%20Here-success?style=for-the-badge">
+  </a>
+</p>
 
 🚀 Features
 📝 Sticky Notes
