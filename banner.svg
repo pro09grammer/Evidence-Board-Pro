@@ -1,0 +1,75 @@
+<svg width="100%" height="220" viewBox="0 0 1000 220" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- RGB Split Filter -->
+    <filter id="glitch">
+      <feOffset in="SourceGraphic" dx="3" dy="0" result="red"/>
+      <feColorMatrix in="red" type="matrix"
+        values="1 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 1 0" result="redShift"/>
+
+      <feOffset in="SourceGraphic" dx="-3" dy="0" result="blue"/>
+      <feColorMatrix in="blue" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 1 0 0
+                0 0 0 1 0" result="blueShift"/>
+
+      <feBlend in="redShift" in2="blueShift" mode="screen"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+
+    <!-- Noise Distortion -->
+    <filter id="distort">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="2">
+        <animate attributeName="baseFrequency"
+          values="0.02;0.08;0.02"
+          dur="0.3s"
+          repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" scale="10"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#000"/>
+
+  <!-- Main Name -->
+  <text x="50%" y="55%"
+        text-anchor="middle"
+        font-size="80"
+        font-family="monospace"
+        fill="#ffffff"
+        filter="url(#glitch)">
+        pro09grammer
+  </text>
+
+  <!-- Distortion Layer (Glitch Burst) -->
+  <text x="50%" y="55%"
+        text-anchor="middle"
+        font-size="80"
+        font-family="monospace"
+        fill="#ffffff"
+        filter="url(#distort)">
+        pro09grammer
+    <animate attributeName="opacity"
+      values="0;1;0"
+      dur="0.4s"
+      repeatCount="indefinite"/>
+  </text>
+
+  <!-- Sci-Fi Warning Text -->
+  <text x="50%" y="85%"
+        text-anchor="middle"
+        font-size="20"
+        font-family="monospace"
+        fill="#ff0033">
+        [ SYSTEM OVERRIDE INITIATED ]
+    <animate attributeName="opacity"
+      values="1;0;1"
+      dur="1s"
+      repeatCount="indefinite"/>
+  </text>
+
+</svg>
