@@ -78,3 +78,9 @@ It allows users to create notes, upload images, connect related elements, zoom i
 | Zoom             | Mouse wheel                         |
 | Pan              | Hold **Ctrl + Drag**                |
 | Delete element   | Select + Press **Delete**           |
+
+---
+
+<p align="center">
+  <img src="banner.svg" />
+</p>
