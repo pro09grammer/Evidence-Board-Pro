@@ -56,3 +56,13 @@ It allows users to create notes, upload images, connect related elements, zoom i
 *  Grid scales with zoom
 
 *  Helps maintain spatial structure
+
+| Action           | Control                             |
+| ---------------- | ----------------------------------- |
+| Select tool      | Click **Select**                    |
+| Create note      | Click **Note**, then click board    |
+| Add image        | Click **Image**, choose file        |
+| Connect elements | Click **Connect** OR Hold **Shift** |
+| Zoom             | Mouse wheel                         |
+| Pan              | Hold **Ctrl + Drag**                |
+| Delete element   | Select + Press **Delete**           |
