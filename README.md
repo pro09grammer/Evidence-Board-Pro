@@ -3,8 +3,6 @@
 <p align="center">
   <img src="https://img.shields.io/github/repo-size/pro09grammer/Evidence-Board-Pro" />
   <img src="https://img.shields.io/github/last-commit/pro09grammer/Evidence-Board-Pro" />
-  <img src="https://img.shields.io/github/issues/pro09grammer/Evidence-Board-Pro" />
-  <img src="https://img.shields.io/github/stars/pro09grammer/Evidence-Board-Pro?style=social" />
 </p>
 
 A browser-based visual investigation and idea-mapping board built with pure HTML, CSS, and JavaScript.
